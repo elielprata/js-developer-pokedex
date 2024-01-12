@@ -1,23 +1,29 @@
 .mainInfo {
   background-color: white;
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 0.875rem;
-}
-
-.infoCategories {
-  padding: 1rem 0;
 }
 
 .infoCategories ul {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .infoCategories ul li {
   list-style: none;
   text-transform: capitalize;
+  margin: 0.75rem 0;
+  padding: 1rem 0;
+  color: #727272;
+}
+
+.infoCategories ul li:first-child {
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 1px solid #101e6b;
 }
 
 .infoItem {
