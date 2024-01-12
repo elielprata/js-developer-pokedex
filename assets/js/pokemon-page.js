@@ -8,6 +8,8 @@ const id = urlParams.get('id')
 pokeApi.getPokemon(parseInt(id)).then((pokemon) => {
   console.log(pokemon)
 
+  const abilities = pokemon.abilities.map((item) => item.ability.name)
+
   info.innerHTML = `
     <div class="infoItem">
       <span class="infoDescription">Species</span>
@@ -16,7 +18,17 @@ pokeApi.getPokemon(parseInt(id)).then((pokemon) => {
 
     <div class="infoItem">
       <span class="infoDescription">Height</span>
-      <span class="infoValue">${pokemon.height} cm</span>
+      <span class="infoValue">${pokemon.height * 10} cm</span>
+    </div>
+
+    <div class="infoItem">
+      <span class="infoDescription">Weigh</span>
+      <span class="infoValue">${pokemon.weight * 0.1} kg</span>
+    </div>
+
+    <div class="infoItem">
+      <span class="infoDescription">Abilities</span>
+      <span class="infoValue">${abilities.join(', ')}</span>
     </div>
   `
 
