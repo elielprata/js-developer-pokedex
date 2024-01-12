@@ -1,0 +1,35 @@
+.mainInfo {
+  background-color: white;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.infoCategories {
+  padding: 1rem 0;
+}
+
+.infoCategories ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.infoCategories ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.infoItem {
+  display: flex;
+  padding-bottom: 0.375rem;
+}
+
+.infoItem .infoDescription {
+  min-width: 5rem;
+  color: #727272;
+}
+
+.infoItem .infoValue {
+  text-transform: capitalize;
+}
